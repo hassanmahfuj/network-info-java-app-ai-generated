@@ -1,0 +1,7 @@
+echo Main-Class: NetworkInfoApp > Manifest.txt
+
+del *.class
+
+javac NetworkInfoApp.java
+
+jar cfm NetworkInfoApp.jar Manifest.txt NetworkInfoApp.class NetworkInfoApp$1.class NetworkInfoApp$2.class NetworkInfoApp$3.class PingFrame.class PingFrame$1.class PingFrame$2.class PingFrame$PingOutputReader.class PortCheckFrame.class
